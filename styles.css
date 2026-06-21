@@ -1,0 +1,104 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+}
+
+/* Calculator shell - black background */
+.calculator {
+    background: #000000;
+    padding: 2rem 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px #2a2a2a;
+    width: 320px;
+}
+
+/* Title */
+.calc-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 0.7rem;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+}
+
+/* Display */
+#display {
+    width: 100%;
+    padding: 0.9rem 0.8rem;
+    background: #0d0d0d;
+    border: none;
+    border-radius: 1.8rem;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-align: right;
+    outline: none;
+    margin-bottom: 1.5rem;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.8), 0 0 0 1px #2a2a2a;
+    letter-spacing: 1px;
+}
+
+/* Button grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+/* All buttons: white background, black text */
+.btn {
+    background: #ffffff;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0.9rem 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 0 0 1px #3a3a3a;
+    transition: all 0.08s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Equal button spans 2 columns */
+.btn-equal {
+    grid-column: span 2;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Glow effect (applied via JavaScript) */
+.btn-glow {
+    box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.8), 
+                0 0 40px 12px rgba(255, 255, 255, 0.5);
+    transform: scale(0.96);
+    background: #f0f0f0;
+    transition: 0.04s;
+}
+
+/* Active state fallback */
+.btn:active {
+    transform: scale(0.94);
+}
+
+/* Focus outline for accessibility */
+.btn:focus-visible {
+    outline: 2px solid #888;
+}

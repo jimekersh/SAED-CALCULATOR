@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAED Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowOrange Beauty</title>
+
+  <!-- CSS -->
+  <link rel="stylessheet" href="styles.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="calculator">
-        <!-- Title -->
-        <div class="calc-title">SAED calculator</div>
 
-        <!-- Display -->
-        <input type="text" id="display" placeholder="0" readonly>
+<header>
+  <h1>GlowOrange</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Store</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-        <!-- Button Grid -->
-        <div class="btn-grid">
-            <!-- Row 1 -->
-            <button class="btn btn-function" data-value="clear">C</button>
-            <button class="btn btn-function" data-value="sign">±</button>
-            <button class="btn btn-function" data-value="percent">%</button>
-            <button class="btn btn-operator" data-value="/">÷</button>
+<section class="hero animate">
+  <div class="hero-text">
+    <h2>Enhance Your Natural Beauty</h2>
+    <p>Luxury makeup consultation and premium beauty products curated just for you.</p>
+    <button onclick="bookNow()">Book Consultation</button>
+  </div>
 
-            <!-- Row 2 -->
-            <button class="btn" data-value="7">7</button>
-            <button class="btn" data-value="8">8</button>
-            <button class="btn" data-value="9">9</button>
-            <button class="btn btn-operator" data-value="*">×</button>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Makeup Artist">
+  </div>
+</section>
 
-            <!-- Row 3 -->
-            <button class="btn" data-value="4">4</button>
-            <button class="btn" data-value="5">5</button>
-            <button class="btn" data-value="6">6</button>
-            <button class="btn btn-operator" data-value="-">−</button>
+<section class="services">
+  <h3 class="animate">Our Beauty Services</h3>
 
-            <!-- Row 4 -->
-            <button class="btn" data-value="1">1</button>
-            <button class="btn" data-value="2">2</button>
-            <button class="btn" data-value="3">3</button>
-            <button class="btn btn-operator" data-value="+">+</button>
-
-            <!-- Row 5 -->
-            <button class="btn" data-value="0">0</button>
-            <button class="btn" data-value=".">.</button>
-            <button class="btn btn-equal" data-value="=" colspan="2">=</button>
-        </div>
+  <div class="service-box">
+    <div class="card animate">
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15" alt="">
+      <div class="card-content">
+        <h4>Makeup Consultation</h4>
+        <p>Personalized advice tailored to your skin and style.</p>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="card animate">
+      <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8" alt="">
+      <div class="card-content">
+        <h4>Bridal Makeup</h4>
+        <p>Soft glam to bold looks for unforgettable moments.</p>
+      </div>
+    </div>
+
+    <div class="card animate">
+      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c" alt="">
+      <div class="card-content">
+        <h4>Beauty Store</h4>
+        <p>Shop premium cosmetics handpicked by professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta animate">
+  <h3>Ready to Glow?</h3>
+  <p>Start your beauty journey with us today ✨</p>
+  <button onclick="bookNow()">Get Started</button>
+</section>
+
+<footer>
+  © 2026 GlowOrange Beauty — All rights reserved
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
